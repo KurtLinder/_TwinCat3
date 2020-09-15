@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.7">
+  <POU Name="Transportwagen" Id="{f156885e-d892-4706-970d-8d2a74171c01}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK Transportwagen
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[AdsOutput.P1:= AdsInput.S1;
+AdsOutput.Q1:= AdsInput.S2;
+AdsOutput.Q2:= AdsInput.S3;]]></ST>
+    </Implementation>
+    <LineIds Name="Transportwagen">
+      <LineId Id="9" Count="2" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
