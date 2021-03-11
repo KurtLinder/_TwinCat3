@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <GVL Name="Hardware" Id="{4c2e7edf-4cc5-48c3-8fc1-11d10d42b7a4}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	// Digitale Eingänge EL1809
+	DI_0_1_bis_8 AT %I*: BYTE; 	//dSub 25 Stecker	Term 2
+	DI_0_9_bis_16 AT %I*: BYTE; //dSub 25 Stecker	Term 2
+	DI_1_1_bis_8 AT %I*: BYTE; 	//					Term 3
+	DI_1_9_bis_16 AT %I*: BYTE; //					Term 3
+	
+	// Digitale Ausgänge EL2809
+	DQ_0_1_bis_8 AT %Q*: BYTE; 	//dSub 25 Stecker	Term 4
+	DQ_0_9_bis_16 AT %Q*: BYTE; //dSub 25 Stecker	Term 4
+	DQ_1_1_bis_8 AT %Q*: BYTE; 	//					Term 5
+	DQ_1_9_bis_16 AT %Q*: BYTE; //					Term 5
+	
+	// Analoge Eingänge EL3064
+	AI_0_1 AT %I*: INT;			//					Term 6
+	AI_0_2 AT %I*: INT;			//					Term 6
+	AI_0_3 AT %I*: INT;			//					Term 6
+	AI_0_4 AT %I*: INT;			//					Term 6
+	
+	// Analoge Ausgänge EL4034
+	AQ_0_1 AT %Q*: INT;			//					Term 7
+	AQ_0_2 AT %Q*: INT;			//					Term 7
+	AQ_0_3 AT %Q*: INT;			//					Term 7
+	AQ_0_4 AT %Q*: INT;			//					Term 7
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
