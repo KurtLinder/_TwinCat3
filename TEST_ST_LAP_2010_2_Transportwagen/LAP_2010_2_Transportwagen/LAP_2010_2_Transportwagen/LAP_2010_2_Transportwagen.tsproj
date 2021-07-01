@@ -1315,6 +1315,24 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 		<DataType>
+			<Name GUID="{604191F1-C292-416F-BD1E-CFD75694CE6B}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..3] OF BYTE</Name>
+			<BitSize>32</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>4</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{B06D26C8-71DC-62D0-9A93-9E8C7ADB9821}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..7] OF BYTE</Name>
+			<BitSize>64</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>8</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
 			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
 			<BitSize>1</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
@@ -2382,6 +2400,328 @@ External Setpoint Generation:
 				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="LAP_2010_2_Transportwagen\LAP_2010_2_Transportwagen.tmc">
 					<Name>LAP_2010_2_Transportwagen Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="1">
+						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>PlcCx9020.DI_0_0</Name>
+							<Comment><![CDATA[ dSub 25]]></Comment>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI</Name>
+							<Type GUID="{604191F1-C292-416F-BD1E-CFD75694CE6B}">ARRAY [0..3] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_0_1</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_0_2</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_0_3</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_0_4</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_0_5</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_0_6</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_0_7</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_1_0</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_1_1</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_1_2</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_1_3</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_1_4</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_1_5</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_1_6</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_1_7</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_2_0</Name>
+							<Comment><![CDATA[ Sicherheitsbuchsen]]></Comment>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_2_1</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_2_2</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_2_3</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_2_4</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_2_5</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_2_6</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_2_7</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_3_0</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_3_1</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_3_2</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_3_3</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_3_4</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_3_5</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_3_6</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DI_3_7</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AI_0</Name>
+							<Comment><![CDATA[ Analogeingang 0]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AI</Name>
+							<Type GUID="{B06D26C8-71DC-62D0-9A93-9E8C7ADB9821}">ARRAY [0..7] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AI_1</Name>
+							<Comment><![CDATA[ Analogeingang 1]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AI_2</Name>
+							<Comment><![CDATA[ Analogeingang 2]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AI_3</Name>
+							<Comment><![CDATA[ Analogeingang 3]]></Comment>
+							<Type>INT</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>PlcCx9020.DA</Name>
+							<Type GUID="{604191F1-C292-416F-BD1E-CFD75694CE6B}">ARRAY [0..3] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_0_0</Name>
+							<Comment><![CDATA[ dSub 25]]></Comment>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_0_1</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_0_2</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_0_3</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_0_4</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_0_5</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_0_6</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_0_7</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_1_0</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_1_1</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_1_2</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_1_3</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_1_4</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_1_5</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_1_6</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_1_7</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_2_0</Name>
+							<Comment><![CDATA[ Sicherheitsbuchsen]]></Comment>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_2_1</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_2_2</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_2_3</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_2_4</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_2_5</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_2_6</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_2_7</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_3_0</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_3_1</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_3_2</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_3_3</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_3_4</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_3_5</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_3_6</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.DA_3_7</Name>
+							<Type>BIT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AA</Name>
+							<Type GUID="{B06D26C8-71DC-62D0-9A93-9E8C7ADB9821}">ARRAY [0..7] OF BYTE</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AA_0</Name>
+							<Comment><![CDATA[ Analogausgang 0	]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AA_1</Name>
+							<Comment><![CDATA[ Analogausgang 1	]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AA_2</Name>
+							<Comment><![CDATA[ Analogausgang 2	]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>PlcCx9020.AA_3</Name>
+							<Comment><![CDATA[ Analogausgang 3	]]></Comment>
+							<Type>INT</Type>
+						</Var>
+					</Vars>
 					<Contexts>
 						<Context>
 							<Id NeedCalleeCall="true" OTCID="#x08502001">0</Id>
@@ -2414,6 +2754,9 @@ External Setpoint Generation:
 				</AddressInfo>
 				<Image Id="1" AddrType="9" ImageType="3">
 					<Name>Image</Name>
+				</Image>
+				<Image Id="4" AddrType="10" ImageType="3">
+					<Name>Prozessabbild-2</Name>
 				</Image>
 				<Box Id="1" BoxType="9099">
 					<Name>Term 1 (EK1200)</Name>
@@ -4882,8 +5225,9 @@ Bit 8 - 15 : reserved]]></Comment>
 		</Io>
 	</Project>
 	<Mappings>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500841000403}" Id="#x02030020"/>
 		<MappingInfo Identifier="{00000000-0010-0304-3000-040310000403}" Id="#x02030010"/>
-		<MappingInfo Identifier="{00000000-0020-0304-3000-040321000403}" Id="#x02030020"/>
+		<MappingInfo Identifier="{00000000-0020-0304-3000-040322000403}" Id="#x02030030"/>
 		<OwnerA Name="TINC^NC-Task 1 SAF^Axes^Axis 1">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031)">
 				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" Size="1" OffsA="3"/>
@@ -5028,6 +5372,92 @@ Bit 8 - 15 : reserved]]></Comment>
 				<Link VarA="Enc^Inputs^In^nDcInputTime" VarB="InfoData^DcInputShift"/>
 				<Link VarA="Enc^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
 				<Link VarA="Enc^Inputs^In^nState4" VarB="WcState^WcState"/>
+			</OwnerB>
+		</OwnerA>
+		<OwnerA Name="TIPC^LAP_2010_2_Transportwagen^LAP_2010_2_Transportwagen Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL1809)">
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_0_0" VarB="Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_0_1" VarB="Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_0_2" VarB="Channel 3^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_0_3" VarB="Channel 4^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_0_4" VarB="Channel 5^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_0_5" VarB="Channel 6^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_0_6" VarB="Channel 7^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_0_7" VarB="Channel 8^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_1_0" VarB="Channel 9^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_1_1" VarB="Channel 10^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_1_2" VarB="Channel 11^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_1_3" VarB="Channel 12^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_1_4" VarB="Channel 13^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_1_5" VarB="Channel 14^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_1_6" VarB="Channel 15^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_1_7" VarB="Channel 16^Input"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL1809)">
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_2_0" VarB="Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_2_1" VarB="Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_2_2" VarB="Channel 3^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_2_3" VarB="Channel 4^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_2_4" VarB="Channel 5^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_2_5" VarB="Channel 6^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_2_6" VarB="Channel 7^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_2_7" VarB="Channel 8^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_3_0" VarB="Channel 9^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_3_1" VarB="Channel 10^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_3_2" VarB="Channel 11^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_3_3" VarB="Channel 12^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_3_4" VarB="Channel 13^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_3_5" VarB="Channel 14^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_3_6" VarB="Channel 15^Input"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.DI_3_7" VarB="Channel 16^Input"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL2809)">
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_0_0" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_0_1" VarB="Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_0_2" VarB="Channel 3^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_0_3" VarB="Channel 4^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_0_4" VarB="Channel 5^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_0_5" VarB="Channel 6^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_0_6" VarB="Channel 7^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_0_7" VarB="Channel 8^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_1_0" VarB="Channel 9^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_1_1" VarB="Channel 10^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_1_2" VarB="Channel 11^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_1_3" VarB="Channel 12^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_1_4" VarB="Channel 13^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_1_5" VarB="Channel 14^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_1_6" VarB="Channel 15^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_1_7" VarB="Channel 16^Output"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL2809)">
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_2_0" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_2_1" VarB="Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_2_2" VarB="Channel 3^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_2_3" VarB="Channel 4^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_2_4" VarB="Channel 5^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_2_5" VarB="Channel 6^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_2_6" VarB="Channel 7^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_2_7" VarB="Channel 8^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_3_0" VarB="Channel 9^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_3_1" VarB="Channel 10^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_3_2" VarB="Channel 11^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_3_3" VarB="Channel 12^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_3_4" VarB="Channel 13^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_3_5" VarB="Channel 14^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_3_6" VarB="Channel 15^Output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.DA_3_7" VarB="Channel 16^Output"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL3064)">
+				<Link VarA="PlcTask Inputs^PlcCx9020.AI_0" VarB="AI Standard Channel 1^Value"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.AI_1" VarB="AI Standard Channel 2^Value"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.AI_2" VarB="AI Standard Channel 3^Value"/>
+				<Link VarA="PlcTask Inputs^PlcCx9020.AI_3" VarB="AI Standard Channel 4^Value"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL4034)">
+				<Link VarA="PlcTask Outputs^PlcCx9020.AA_0" VarB="AO Outputs Channel 1^Analog output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.AA_1" VarB="AO Outputs Channel 2^Analog output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.AA_2" VarB="AO Outputs Channel 3^Analog output"/>
+				<Link VarA="PlcTask Outputs^PlcCx9020.AA_3" VarB="AO Outputs Channel 4^Analog output"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

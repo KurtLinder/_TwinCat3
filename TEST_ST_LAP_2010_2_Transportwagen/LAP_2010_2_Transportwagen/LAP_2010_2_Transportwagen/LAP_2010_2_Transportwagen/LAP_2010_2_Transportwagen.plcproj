@@ -15,6 +15,10 @@
     <LibraryReferences>{a3f1687d-fb1a-4d5b-ae1f-d08fbb4978a2}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GVLs\PlcCx9020.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
     <Compile Include="GVLs\SimDI.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>

@@ -9,31 +9,50 @@ END_VAR
     <Implementation>
       <ST><![CDATA[VersionsInfo.Ver := MAXSTRING_TO_BYTEARR(VersionsText);
 
-SimDI.B1 := BitLesen(DigInput.DI[0],0);
-SimDI.B2 := BitLesen(DigInput.DI[0],1);
-SimDI.F1 := BitLesen(DigInput.DI[0],2);
-SimDI.S1 := BitLesen(DigInput.DI[0],3);
-SimDI.S2 := BitLesen(DigInput.DI[0],4);
-SimDI.S3 := BitLesen(DigInput.DI[0],5);
+IF (VersionsInfo.Befehle = 2#0000_00001) THEN
 
-DigOutput.DA[0] := AlleBitSetzen(	SimDa.P1,	
-									SimDa.Q1,
-									SimDa.Q2,	
-									FALSE, FALSE, FALSE,  FALSE, FALSE);]]></ST>
+	SimDI.B1 := BitLesen(DigInput.DI[0],0);
+	SimDI.B2 := BitLesen(DigInput.DI[0],1);
+	SimDI.F1 := BitLesen(DigInput.DI[0],2);
+	SimDI.S1 := BitLesen(DigInput.DI[0],3);
+	SimDI.S2 := BitLesen(DigInput.DI[0],4);
+	SimDI.S3 := BitLesen(DigInput.DI[0],5);
+	
+	DigOutput.DA[0] := AlleBitSetzen(	SimDa.P1,	
+										SimDa.Q1,
+										SimDa.Q2,	
+										FALSE, FALSE, FALSE,  FALSE, FALSE);
+ELSE
+	
+	SimDI.B1 := PlcCx9020.DI_0_0;
+	SimDI.B2 := PlcCx9020.DI_0_1;
+	SimDI.F1 := PlcCx9020.DI_0_2;
+	SimDI.S1 := PlcCx9020.DI_0_3;
+	SimDI.S2 := PlcCx9020.DI_0_4;
+	SimDI.S3 := PlcCx9020.DI_0_5;
+	
+	PlcCx9020.DA_0_0 := SimDa.P1;
+	PlcCx9020.DA_0_1 := SimDa.Q1;
+	PlcCx9020.DA_0_2 := SimDa.Q2;
+END_IF;
+
+]]></ST>
     </Implementation>
     <LineIds Name="DatenRangieren">
       <LineId Id="5" Count="0" />
+      <LineId Id="49" Count="1" />
+      <LineId Id="54" Count="10" />
+      <LineId Id="51" Count="0" />
+      <LineId Id="53" Count="0" />
+      <LineId Id="65" Count="0" />
+      <LineId Id="67" Count="4" />
+      <LineId Id="66" Count="0" />
+      <LineId Id="74" Count="0" />
+      <LineId Id="73" Count="0" />
+      <LineId Id="75" Count="0" />
+      <LineId Id="72" Count="0" />
+      <LineId Id="52" Count="0" />
       <LineId Id="33" Count="0" />
-      <LineId Id="32" Count="0" />
-      <LineId Id="34" Count="0" />
-      <LineId Id="36" Count="0" />
-      <LineId Id="35" Count="0" />
-      <LineId Id="38" Count="0" />
-      <LineId Id="37" Count="0" />
-      <LineId Id="39" Count="0" />
-      <LineId Id="27" Count="0" />
-      <LineId Id="43" Count="0" />
-      <LineId Id="40" Count="0" />
       <LineId Id="44" Count="0" />
     </LineIds>
   </POU>
