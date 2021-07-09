@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <POU Name="DatenRangieren" Id="{ad49a684-d9e6-4dba-bece-08745f191ac1}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM DatenRangieren
+VAR	
+	VersionsText: STRING := 'LAP 2010/1 Kompressoranlage V2.0';
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[VersionsInfo.Ver := MAXSTRING_TO_BYTEARR(VersionsText);
+
+SimDI.B1 := BitLesen(DigInput.DI[0],0);
+SimDI.B2 := BitLesen(DigInput.DI[0],1);
+SimDI.F1 := BitLesen(DigInput.DI[0],2);
+SimDI.S1 := BitLesen(DigInput.DI[0],3);
+SimDI.S2 := BitLesen(DigInput.DI[0],4);
+
+DigOutput.DA[0] := AlleBitSetzen(	SimDa.P1,	
+									SimDa.P2,	
+									SimDa.Q1,
+									SimDa.Q2,
+									SimDa.Q3,	
+									FALSE,  FALSE, FALSE);]]></ST>
+    </Implementation>
+    <LineIds Name="DatenRangieren">
+      <LineId Id="5" Count="0" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="34" Count="0" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="35" Count="0" />
+      <LineId Id="38" Count="1" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="49" Count="0" />
+      <LineId Id="43" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="50" Count="0" />
+      <LineId Id="44" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <POU Name="DeleteMe" Id="{f156885e-d892-4706-970d-8d2a74171c01}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK DeleteMe
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+    StoerungAktiv: BOOL;
+    PumpeHandEin: BOOL;
+    PumpeAutomatikEin: BOOL;
+	Ueberschwappen: TON;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+(*  *********************************************************** *)
+(*  LAP 2010/5 Pumpensteuerung                                  *)
+(*  *********************************************************** *)
+
+
+PumpeHandEin := SimDI.S1 AND (NOT StoerungAktiv);
+
+Ueberschwappen(IN := SimDI.B1, PT := T#1S);
+
+IF (PumpeAutomatikEin AND Ueberschwappen.Q) OR StoerungAktiv OR (NOT SimDI.S2) THEN
+    PumpeAutomatikEin := FALSE;
+END_IF;
+
+IF (NOT PumpeAutomatikEin) AND (NOT SimDI.B2) AND SimDI.S2 AND (NOT StoerungAktiv) THEN
+    PumpeAutomatikEin := TRUE;
+END_IF;
+
+SimDA.Q1 := PumpeHandEin OR PumpeAutomatikEin;
+SimDA.P1 := SimDA.Q1;
+
+IF NOT SimDI.F1           THEN    StoerungAktiv := TRUE;     END_IF;
+IF SimDI.F1 AND SimDI.S3  THEN    StoerungAktiv := FALSE;    END_IF;
+
+SimDA.P2 := (NOT SimDI.F1) OR (StoerungAktiv AND Blinker.Clock_1Hz);]]></ST>
+    </Implementation>
+    <LineIds Name="DeleteMe">
+      <LineId Id="76" Count="0" />
+      <LineId Id="192" Count="22" />
+      <LineId Id="19" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
