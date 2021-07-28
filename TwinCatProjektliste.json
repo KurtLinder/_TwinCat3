@@ -1,0 +1,194 @@
+﻿{
+    "PlcProjektliste": [
+        {
+            "LaufendeNummer": 0,
+            "Bezeichnung": "Getriebemotor",
+            "Kommentar": "Übungsplatte",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "PLC_ST_Getriebemotor",
+            "OrdnerDigitalTwin": "",
+            "Sprache": "St",
+            "Kategorie": "Plc",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 1,
+            "Bezeichnung": "Linearachse",
+            "Kommentar": "Übungsplatte",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "PLC_AS_Linearachse",
+            "OrdnerDigitalTwin": "",
+            "Sprache": "As",
+            "Kategorie": "Plc",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 2,
+            "Bezeichnung": "Linearachse",
+            "Kommentar": "Übungsplatte",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "PLC_CFC_Linearachse",
+            "OrdnerDigitalTwin": "",
+            "Sprache": "Cfc",
+            "Kategorie": "Plc",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 3,
+            "Bezeichnung": "Linearachse",
+            "Kommentar": "Übungsplatte",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "PLC_CPP_Linearachse",
+            "OrdnerDigitalTwin": "",
+            "Sprache": "Cpp",
+            "Kategorie": "Plc",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 3,
+            "Bezeichnung": "Linearachse",
+            "Kommentar": "Übungsplatte",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "PLC_FUP_Linearachse",
+            "OrdnerDigitalTwin": "",
+            "Sprache": "Fup",
+            "Kategorie": "Plc",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 3,
+            "Bezeichnung": "Linearachse",
+            "Kommentar": "Übungsplatte",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "PLC_KOP_Linearachse",
+            "OrdnerDigitalTwin": "",
+            "Sprache": "Kop",
+            "Kategorie": "Plc",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 3,
+            "Bezeichnung": "Linearachse",
+            "Kommentar": "Übungsplatte",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "PLC_ST_Linearachse",
+            "OrdnerDigitalTwin": "",
+            "Sprache": "St",
+            "Kategorie": "Plc",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 3,
+            "Bezeichnung": "LAP_2010_1_Kompressoranlage",
+            "Kommentar": "LAP",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "TEST_ST_LAP_2010_1_Kompressoranlage",
+            "OrdnerDigitalTwin": "LAP_2010_1_Kompressoranlage",
+            "Sprache": "St",
+            "Kategorie": "AutoTests",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten",
+                "DigitalTwinKopieren",
+                "CmdDateiDigitalTwinStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 3,
+            "Bezeichnung": "LAP_2010_2_Transportwagen",
+            "Kommentar": "LAP",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "TEST_ST_LAP_2010_2_Transportwagen",
+            "OrdnerDigitalTwin": "LAP_2010_2_Transportwagen",
+            "Sprache": "St",
+            "Kategorie": "AutoTests",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten",
+                "DigitalTwinKopieren",
+                "CmdDateiDigitalTwinStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 3,
+            "Bezeichnung": "LAP_2010_3_Ofentuersteuerung",
+            "Kommentar": "LAP",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "TEST_ST_LAP_2010_3_Ofentuersteuerung",
+            "OrdnerDigitalTwin": "LAP_2010_3_Ofentuersteuerung",
+            "Sprache": "St",
+            "Kategorie": "AutoTests",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten",
+                "DigitalTwinKopieren",
+                "CmdDateiDigitalTwinStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 3,
+            "Bezeichnung": "LAP_2010_4_Abfuellanlage",
+            "Kommentar": "LAP",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "TEST_ST_LAP_2010_4_Abfuellanlage",
+            "OrdnerDigitalTwin": "LAP_2010_4_Abfuellanlage",
+            "Sprache": "St",
+            "Kategorie": "AutoTests",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten",
+                "DigitalTwinKopieren",
+                "CmdDateiDigitalTwinStarten"
+            ]
+        },
+        {
+            "LaufendeNummer": 3,
+            "Bezeichnung": "LAP_2010_5_Pumpensteuerung",
+            "Kommentar": "LAP",
+            "SoftwareVersion": "TwinCatV3",
+            "OrdnerProjekt": "TEST_ST_LAP_2010_5_Pumpensteuerung",
+            "OrdnerDigitalTwin": "LAP_2010_5_Pumpensteuerung",
+            "Sprache": "St",
+            "Kategorie": "AutoTests",
+            "Jobs": [
+                "SorceOrdnerErstellen",
+                "ProjektKopieren",
+                "CmdDateiProjektStarten",
+                "DigitalTwinKopieren",
+                "CmdDateiDigitalTwinStarten"
+            ]
+        }
+    ]
+}
